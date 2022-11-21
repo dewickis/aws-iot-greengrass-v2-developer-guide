@@ -146,7 +146,8 @@ If your development computer uses an earlier version of Windows, you might not h
    ```
 
    The command prints the version of Java that runs on the device\. The output might look similar to the following example\.
-
+**Important**
+Some components (including AWS-managed, e.g. SageMaker Edge Manager) require a 64-bit version of Java to deploy successfully on the Greengrass Core device. If you do not see "64-bit" in the "java -version" output, you must complete the upgrade before proceeding.
    ```
    openjdk version "11.0.9.1" 2020-11-04
    OpenJDK Runtime Environment (build 11.0.9.1+1-post-Debian-1deb10u2)
